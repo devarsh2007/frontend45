@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">
+        working with datalist
+    </h1>
+    <hr>
+
+    <form action="./success.html">
+        <table border="1" cellpadding="10" align="center">
+            <tr>
+                <td>source</td>
+                <td>
+                    <input type="text" name="source" list="cities" placeholder="enter your source point" size="40" required >
+                </td>
+            </tr>
+            <tr>
+                <td>destination</td>
+                <td>
+                    <input type="text" name="destination" placeholder="enter your destination point" size="40"
+                        list="cities" required>
+                </td>
+            </tr>
+            <tr>
+                <td>seat</td>
+                <td>
+                    <select name="seat" id="seat" required>
+                        <option value="0">select seat no</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </td>
+            </tr>
+
+            <datalist id="cities">
+                <option value="Ahmedabad">
+                <option value="Surat">
+                <option value="Vadodara">
+                <option value="Rajkot">
+                <option value="Bhavnagar">
+                <option value="Jamnagar">
+                <option value="Junagadh">
+                <option value="Gandhinagar">
+                <option value="Anand">
+                <option value="Morbi">
+                <option value="Mehsana">
+                <option value="Nadiad">
+                <option value="Porbandar">
+                <option value="Godhra">
+                <option value="Navsari">
+                <option value="Bharuch">
+                <option value="Valsad">
+                <option value="Patan">
+                <option value="Amreli">
+                <option value="Palanpur">
+                <option value="Botad">
+                <option value="Dahod">
+                <option value="Tapi">
+                <option value="Surendranagar">
+            </datalist>
+
+            <tr>
+                <td colspan="2" align="right">
+                    <button type="submit">book Ticket</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
