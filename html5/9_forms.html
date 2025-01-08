@@ -19,7 +19,7 @@
                 <label for="name">username</label>
             </td>
             <td>
-                <input type="text" name="name" id="name" size="35" autocomplete="on" required>
+                <input type="text" name="name" id="name" size="35" autocomplete="on" required autofocus>
             </td>
         </tr>
         <tr>
@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td><label for="date">birth date</label></td>
-            <td><input type="date" name="date" id="date"></td>
+            <td><input type="date" name="date" id="date" min="2025-01-01" max="2025-01-31" /></td>
         </tr>
         <tr>
             <td><label for="time">date and time</label></td>
@@ -42,7 +42,7 @@
         </tr>
         <tr>
             <td><label for="month">month</label></td>
-            <td><input type="month" name="month" id="month"></td>
+            <td><input type="number" name="month" id="month" min="1" max="12" required /></td>
         </tr>
         <tr>
             <td><label for="number">age</label></td>
