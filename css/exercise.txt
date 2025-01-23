@@ -1,0 +1,2 @@
+1) add style to your resume
+2) create page that display user profile 
