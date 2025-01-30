@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            margin: 0px;
+        }
+
+        div {
+            display: flex;
+            gap: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            /* border: 2px solid red; */
+            padding-top: 10PX;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(215, 206, 238);
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+        nav ul li a img{
+            padding-right: 5px;
+        }
+
+        a:hover{
+            color: white;
+            background-color: rgb(59, 15, 100);
+            padding: 10px;
+        }
+        h2{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="./icons8-bootstrap-48.png" alt="">
+            <h1>bootstrap</h1>
+        </div>
+
+        <ul>
+            <li><a href=""><img width="20" height="20" src="https://img.icons8.com/material-sharp/24/home.png"
+                        alt="home" />home</a></li>
+
+            <li><a href=""><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/category.png"
+                        alt="category" />cetagories</a></li>
+
+            <li><a href=""><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/phone.png"
+                        alt="phone" />contact us</a></li>
+            <li><a href=""><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/user--v1.png"
+                        alt="user--v1" />about us</a></li>
+            <li><a href="">
+                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/login-rounded-right.png"
+                        alt="login-rounded-right" />login</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h2>
+        heading 2
+    </h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quo quod optio autem inventore quibusdam, nobis facere dolore voluptas a in repellat nam sit ipsa, necessitatibus velit eos? Quia ullam reprehenderit dolorem nam mollitia praesentium illo ad impedit repellat architecto, accusantium voluptas quam omnis, porro vel nostrum rem, eligendi id quaerat? Repudiandae aperiam, itaque optio repellendus a, architecto veritatis aliquam assumenda consequatur dolor nihil delectus, maiores voluptas in quis praesentium earum consectetur animi illo adipisci. Accusantium aliquid quis, vel repellat earum quo voluptates aut eveniet! Natus amet nesciunt sapiente eligendi ipsam. Ab velit, ipsum iusto aspernatur ut voluptate veniam quae?</p>
+
+    <hr>
+    <h2>
+        heading of page
+    </h2>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias maxime a voluptas similique rem voluptates reiciendis aut ipsum eos, molestiae itaque earum aperiam excepturi harum officia fuga laudantium neque ipsam distinctio voluptate et. Enim repudiandae expedita delectus officiis? Accusantium esse quo atque vel consectetur dolores fugiat. Quo numquam dignissimos, iusto inventore iste eligendi magni soluta adipisci, deleniti est delectus fugiat neque, rerum vel. Nostrum facere aperiam illo dolores ad, reiciendis ratione eum ipsum eaque, rerum magni officiis pariatur, repudiandae amet commodi? Eveniet animi modi ipsum enim unde pariatur amet perspiciatis inventore itaque, nesciunt facilis, ratione, corrupti consectetur dignissimos voluptatum necessitatibus nihil? Nemo nesciunt autem optio omnis, quos maxime id numquam ea fugiat provident ipsa laborum? Tenetur natus aperiam animi nobis provident labore adipisci magni veritatis deserunt reiciendis ipsum sit ullam, enim ex ut magnam maiores velit facilis ipsa explicabo atque sunt voluptates, accusamus ea! Numquam omnis sed, perspiciatis qui molestiae corporis vero neque, sint itaque quas earum beatae rerum, saepe libero magni eum doloremque facilis quia officiis natus vitae distinctio provident aliquam! Hic eaque ab aut veritatis veniam voluptatibus aliquid maiores tenetur, tempore inventore pariatur fugiat placeat cum necessitatibus? Ea, quasi obcaecati animi consequatur dolorum modi repellendus. Maxime, excepturi.
+    </p>
+
+    <div>
+        JS components
+
+Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.
+
+    Alerts for dismissing
+    Buttons for toggling states and checkbox/radio functionality
+    Carousel for all slide behaviors, controls, and indicators
+    Collapse for toggling visibility of content
+    Dropdowns for displaying and positioning (also requires Popper)
+    Modals for displaying, positioning, and scroll behavior
+    Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors
+    Navs with the Tab plugin for toggling content panes
+    Offcanvases for displaying, positioning, and scroll behavior
+    Scrollspy for scroll behavior and navigation updates
+    Toasts for displaying and dismissing
+    Tooltips and popovers for displaying and positioning (also requires Popper)
+
+Important globals
+
+Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.
+HTML5 doctype
+
+Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.
+
+<!doctype html>
+<html lang="en">
+  ...
+</html>
+<br>
+Viewport meta
+
+Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head>.
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+You can see an example of this in action in the quick start.
+Box-sizing
+
+<br>
+For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom Search Engine.
+
+On the rare occasion you need to override it, use something like the following:
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+With the above snippet, nested elements—including generated content via ::before and ::after—will all inherit the specified box-sizing for that .selector-for-some-widget.
+
+Learn more about box model and sizing at CSS Tricks.
+Rebootbr
+
+<br>
+
+For improved cross-browser rendering, we use Reboot to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+Community
+
+Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.
+
+    Read and subscribe to The Official Bootstrap Blog.
+    Ask questions and explore our GitHub Discussions.
+    Discuss, ask questions, and more on the community Discord or Bootstrap subreddit.
+    Chat with fellow Bootstrappers in IRC. On the irc.libera.chat server, in the #bootstrap channel.
+    Implementation help may be found at Stack Overflow (tagged bootstrap-5).
+    Developers should use the keyword bootstrap on packages that modify or add to the functionality of Bootstrap when distributing through npm or similar delivery mechanisms for maximum discoverability.
+
+You can also follow @getbootstrap on Twitter for the latest gossip and awesome music videos.
+    </div>
+</body>
+
+</html>
