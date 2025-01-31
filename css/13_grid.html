@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        body{
+            background-color: rgb(232, 230, 230);
+        }
+        article{
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transition:all ease-in-out 1s;
+            margin-left: 30%;
+        }
+
+        article header h2{
+            text-align: center;
+            
+        }
+        section{
+            display: grid;
+            grid-template-columns: repeat(50,1fr);
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        working with grid
+    </h1>
+    <hr>
+    <section>
+        <article class="art">
+            <header>
+                <h2>article 1</h2>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta explicabo ipsum, doloremque provident placeat cumque blanditiis accusamus animi veritatis corporis ad, voluptate tenetur eligendi. In eaque perspiciatis veniam quae quis.
+            </p>
+        </article>
+    
+        <article class="art">
+            <header>
+                <h2>article 2</h2>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta explicabo ipsum, doloremque provident placeat cumque blanditiis accusamus animi veritatis corporis ad, voluptate tenetur eligendi. In eaque perspiciatis veniam quae quis.
+            </p>
+        </article>
+        <article class="art">
+            <header>
+                <h2>article 3</h2>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta explicabo ipsum, doloremque provident placeat cumque blanditiis accusamus animi veritatis corporis ad, voluptate tenetur eligendi. In eaque perspiciatis veniam quae quis.
+            </p>
+        </article>
+    </section>
+</body>
+</html>
